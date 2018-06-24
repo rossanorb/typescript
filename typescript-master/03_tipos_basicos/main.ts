@@ -1,3 +1,7 @@
+let testA = false;
+let testB:boolean = false;
+
+// .................
 
 var test:boolean = true;
 var id:number = 2;
@@ -45,5 +49,3 @@ function printNumber(num:number):void{
 }
 
 printNumber(32);
-
-
