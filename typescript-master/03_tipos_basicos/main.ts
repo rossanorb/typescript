@@ -15,9 +15,9 @@ var octal: number = 0o744;
 
 //................
 
-var name : string = "Guilherme";
+var nome : string = "Guilherme";
 var car : string = 'Camaro';
-var text = `<p> Name: ${name} </p>
+var text = `<p> Name: ${nome} </p>
             <p> Car: ${car} </p>
 `;
 
@@ -49,3 +49,7 @@ function printNumber(num:number):void{
 }
 
 printNumber(32);
+
+//arrays
+let _myArray1: Array<any> = [2,'string', false, {name:'Rossano'}];
+let _myArray2: any[] = [2,'string', false, {name:'Rossano'}];
