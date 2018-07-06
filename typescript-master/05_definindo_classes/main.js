@@ -1,4 +1,4 @@
-var Car = (function () {
+var Car = /** @class */ (function () {
     function Car(name, color, power) {
         this.name = name;
         this.color = color;
@@ -12,7 +12,7 @@ var Car = (function () {
 }());
 var camaro = new Car("Camaro", "Yellow", 45);
 camaro.printCar();
-var Car2 = (function () {
+var Car2 = /** @class */ (function () {
     function Car2(newName, newColor, newPower) {
         this._name = newName;
         this._color = newColor;
@@ -39,6 +39,18 @@ var Car2 = (function () {
     Car2.list = [];
     return Car2;
 }());
+var Aninal = /** @class */ (function () {
+    /* sendo public não é necessário declarar
+    name:string;
+    color:string;
+    */
+    function Aninal(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+    return Aninal;
+}());
+var animal = new Aninal('Coelho', 'branco');
 var ferrari = new Car2("Ferrari", "red", 50);
 //ferrari._name = "Camaro";
 console.log(Car2.list);
@@ -49,4 +61,5 @@ ferrari.name = "Ferrari2";
 console.log(ferrari.name);
 ferrari.setName("Ferrari3");
 console.log(ferrari.getName());
-//# sourceMappingURL=main.js.map
+console.log(animal.name);
+console.log(animal.color);
