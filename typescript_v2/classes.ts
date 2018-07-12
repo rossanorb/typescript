@@ -27,7 +27,15 @@ class Aninal implements AninalInterface{
 }
 
 class Coelho extends Aninal{
-    idade:number;
+    private _idade:number;
+
+    get idade():number {
+        return this._idade;
+    }
+
+    set idade(value:number) {
+        this._idade = value;
+    }
 
     comer(){
         super.comer();
@@ -36,7 +44,9 @@ class Coelho extends Aninal{
 }
 
 let coelho:Coelho = new Coelho("Bunny", 'black');
+coelho.idade = 2;
 
 console.log(coelho.name);
 console.log(coelho.color);
+console.log(`idade: ${coelho.idade}`);
 coelho.comer();
