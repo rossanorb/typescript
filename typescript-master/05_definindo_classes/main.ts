@@ -40,17 +40,7 @@ class Car2{
     }
 }
 
-class Aninal{
-    /* sendo public não é necessário declarar
-    name:string;
-    color:string;
-    */
-    constructor(public name:string, public color:string){
 
-    }
-}
-
-let animal:Aninal = new Aninal('Coelho','branco');
 
 var ferrari = new Car2("Ferrari","red",50);
 //ferrari._name = "Camaro";
@@ -64,6 +54,3 @@ console.log(ferrari.name);
 
 ferrari.setName("Ferrari3");
 console.log(ferrari.getName());
-
-console.log( animal.name );
-console.log( animal.color );
